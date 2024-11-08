@@ -1,0 +1,226 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: linear-gradient(white);
+    padding: 20px;
+    margin: 0;
+  }
+  
+  /* Container Styles */
+  .container {
+    max-width: 60%;
+    margin: 0 auto;
+    background: #fcfafa;
+    padding: 40px;
+    border-radius: 60px;
+    box-shadow: 0 0 30px rgba(249, 247, 247, 0.7);
+    border: 10px solid #090a0a;
+  }
+  
+  /* Header Styles */
+  h1,
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f4f3f0;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 1000;
+    background: -webkit-linear-gradient(black, #0a0b0b,black);
+    background-clip: text;
+    color: transparent;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flexbox;
+    flex-direction: column;
+  }
+  
+  fieldset {
+    margin-bottom: 10px;
+    padding: 25px;
+    border: 8px solid #0e0e0e;
+    border-radius: 30px;
+    background-color: #fdfafa;
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 1.3rem;
+  color: #0c0c0c;
+    
+    
+  }
+  
+  label {
+    display: block;
+    margin-top: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    font: bold;
+    color: #0a0a0a;
+  
+  }
+  
+  input {
+    margin-top: 10px;
+    padding: 15px;
+    border: 4px solid #080808;
+    border-radius: 20px;
+    width: calc(100% - 24px);
+    box-sizing: border-box;
+    background-color: #fdf8f8;
+    color: #0a0a0a;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #00d2d3;
+    box-shadow: 0 0 8px #0d0f0f;
+    outline: none;
+  }
+  
+  button {
+    padding: 20px;
+    background-color: #0d0d0d;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color:   #1132eb;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px #1132eb;
+    border-color: #1132eb;
+  }
+  
+  /* Resume Styles */
+  #resume {
+    margin-top: 50px;
+  }
+  
+  #resume-content {
+    background-color: #f2f4f7;
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #050505;
+    color: bolder, #090909;
+  }
+  
+  #resume-content h3 {
+    margin-top: 0;
+    color: #080808;
+  }
+  
+  #resume-content p,
+  #resume-content ul {
+    margin: 30px 0;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 25px;
+    color: #070707;
+  }
+  
+  /* Share Section Styles */
+  #share-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  #shareable-link {
+    display: block;
+    margin: 15px 0;
+    color: #0c0c0c;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  #shareable-link:hover {
+    color: #3715fa;
+    text-decoration: underline;
+  }
+  
+  #copy-link-btn,
+  #download-btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #101010;
+    color: #ffffff;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+  }
+  
+  #copy-link-btn:hover,
+  #download-btn:hover {
+    background-color: #00a8ff;
+    box-shadow: 0 0 10px #00d2d3;
+    border-color: #00d2d3;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .container {
+      padding: 30px;
+      max-width: 100%;
+    }
+  
+    h1,
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+  
+    form,
+    fieldset {
+      padding: 20px;
+    }
+  
+    legend {
+      font-size: 1.2rem;
+    }
+  
+    input,
+    button {
+      font-size: 1rem;
+      padding: 10px;
+    }
+  
+    button {
+      margin-top: 10px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    h1,
+    h2 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+  
+    input,
+    button {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .container {
+      padding: 20px;
+    }
+  }
